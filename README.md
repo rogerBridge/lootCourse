@@ -1,1 +1,1 @@
-# lootCourse
+# 抢课系统
