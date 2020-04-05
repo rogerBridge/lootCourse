@@ -31,19 +31,19 @@
 
 4. 接口设计:
 
-   * 登录
+   * 登录(从student_info里面获取信息)
    ```
     method: POST
     url: /login
     request body: // 请求体
-        usename: string
-        password: string
+        usename: string // 学号
+        password: string // 密码
     response: // 响应体
         token: string
         userId: int
    ```
 
-   * 学生密码修改
+   * 学生密码修改(暂时不做)
    ```
     method: POST
     url: /modifyUserPasswd
@@ -58,7 +58,7 @@
         result: interface{} // optional
    ```
 
-   * 可选课程
+   * 可选课程(从course_info里面获取课程)
    ```
    method: GET
    url: /OptionalCourse
@@ -78,7 +78,7 @@
     // 可选课程的获取条件是: 管理员在导入课程的时候, 课程和班级相互关联. 学生查到班级, 班级查到关联课程, 然后将课程做成: []Course 返回
    ```
 
-    * 已选课程
+    * 已选课程(从表格students_info里面获取数据)
     ```
     method: GET
     url: /hadCourse
@@ -124,6 +124,7 @@
         type studentInfo struct {
             studentName string // 学生姓名
             studentNo string // 学号
+            studentPasswd string // 密码, 直接用md5存储特征值
             studentClass string // 学生班级, 例如: "电子142"
             studentDepartment string // 学生所属部门
             studentCollege string // 学生所属学院
@@ -152,6 +153,7 @@
             courseBrief string
             courseAboutClass string
             courseAllNum int // 课程可以容纳的学生数量
+            courseStock int // 课程剩余的可以容纳的学生数量
         }
     课程结构数据库表: course_info
     courseName string
