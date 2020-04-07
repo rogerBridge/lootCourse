@@ -61,7 +61,7 @@
    * 可选课程(从course_info里面获取课程)
    ```
    method: GET
-   url: /OptionalCourse
+   url: /optionalCourse
    request body: //请求体
     userId: int // 直接传token, 后台根据token去查找userId, 貌似也可以呀 :)
    response body: // 响应体
@@ -77,7 +77,7 @@
     }
     // 可选课程的获取条件是: 管理员在导入课程的时候, 课程和班级相互关联. 学生查到班级, 班级查到关联课程, 然后将课程做成: []Course 返回
    ```
-
+   
     * 已选课程(从表格students_info里面获取数据)
     ```
     method: GET
@@ -117,7 +117,7 @@
     * 学生信息导入
     ```
     method: POST
-    url: /importStudentInfo
+    url: /importStudentsInfo
     request body:
         file: studentInfo.xlsx
     response body:
