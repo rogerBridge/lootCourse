@@ -63,7 +63,7 @@ func (r *RabbitMQ) PublishSimple(message string, index int) {
 	})
 }
 
-// 3.简单模式下receive消息
+// 简单模式下receive消息
 func (r *RabbitMQ) ConsumeSimple() {
 	// 1.request queue
 	_, err := r.channel.QueueDeclare(r.QueueName, false, false, false, false, nil)
@@ -84,5 +84,88 @@ func (r *RabbitMQ) ConsumeSimple() {
 	log.Println("等待接收消息...")
 	<-forever // 负责让程序阻塞
 	// 要让程序死锁, 所有的goroutine都要死锁, 匿名函数里面的goroutine没有死锁
+
+}
+
+// 订阅模式下创建结构体
+func NewRabbitmqPubSub(exchangeName string) *RabbitMQ {
+	return NewRabbitMQ("", exchangeName, "")
+}
+
+// 订阅模式生产
+func (r *RabbitMQ) PublishSubscribe(message string, i int) {
+	// 1.申请exchange
+	err := r.channel.ExchangeDeclare(r.Exchange, "fanout", true, false, false, false, nil)
+	r.FailOnError(err, "常见exchange错误")
+	// 2.发送消息
+	err = r.channel.Publish(r.Exchange, "fanout", false, false, amqp.Publishing{ContentType: "text/plain", Body: []byte(message + strconv.Itoa(i))})
+	r.FailOnError(err, "exchange发送消息失败")
+}
+
+// 订阅模式消费
+func (r *RabbitMQ) ConsumeSubscribe() {
+	// 1.申请exchange
+	err := r.channel.ExchangeDeclare(r.Exchange, "fanout", true, false, false, false, nil)
+	r.FailOnError(err, "申请exchange发生错误")
+	// 2.申请queue
+	q, err := r.channel.QueueDeclare("", false, false, true, false, nil)
+	r.FailOnError(err, "")
+	// 3.绑定exchange和队列
+	r.channel.QueueBind(q.Name, "", r.Exchange, false, nil)
+	// 4. 开始消费
+	msgs, err := r.channel.Consume(q.Name, "", true, false, false, false, nil)
+	if err != nil {
+		log.Printf("%s", err)
+	}
+	c := make(chan bool)
+	// 为什么没有死锁退出呢? 难道是因为<-chan有方向?
+	go func() {
+		for d := range msgs {
+			fmt.Println(string(d.Body))
+		}
+	}()
+	log.Println("等待接收消息...")
+	<-c // 负责让程序阻塞
+}
+
+// 路由模式 type和key
+func NewRabbitMQrouting(exchangeName string, routingKey string) *RabbitMQ {
+	return NewRabbitMQ("", exchangeName, routingKey)
+}
+
+// 路由模式下发送消息
+func (r *RabbitMQ) PublishRouting(message string) {
+	// 1.尝试创建交换机
+	err := r.channel.ExchangeDeclare(r.Exchange, "direct", true, false, false, false, nil)
+	r.FailOnError(err, "Failed to declare a exchange")
+	// 2.尝试发送消息
+	err = r.channel.Publish(r.Exchange, r.key, false, false, amqp.Publishing{ContentType: "text/plain", Body: []byte(message)})
+	r.FailOnError(err, "")
+}
+
+// 路由模式下消息的接收
+func (r *RabbitMQ) ReceiveRouting() {
+	// 1.尝试创建交换机
+	err := r.channel.ExchangeDeclare(r.Exchange, "direct", true, false, false, false, nil)
+	r.FailOnError(err, "")
+	// 2.试探性创建队列
+	q, err := r.channel.QueueDeclare("", false, false, true, false, nil)
+	r.FailOnError(err, "")
+	// 3.绑定队列和exchange
+	err = r.channel.QueueBind(q.Name, r.key, r.Exchange, false, nil)
+	// 开始消费
+	msgs, err := r.channel.Consume(q.Name, "", true, false, false, false, nil)
+	if err != nil {
+		log.Printf("%s", err)
+	}
+	c := make(chan bool)
+	// 为什么没有死锁退出呢? 难道是因为<-chan有方向?
+	go func() {
+		for d := range msgs {
+			fmt.Println(string(d.Body))
+		}
+	}()
+	log.Println("等待接收消息...")
+	<-c // 负责让程序阻塞
 
 }
