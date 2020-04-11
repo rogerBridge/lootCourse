@@ -17,7 +17,7 @@ func main() {
 	//// 注册控制器
 
 	// 首先, 学生模块
-	studentsParty := app.Party("/students", func(c context.Context) {
+	studentsParty := app.APIBuilder.Party("/students", func(c context.Context) {
 		c.Next()
 	})
 	studentsParty.Done(func(c context.Context) {
@@ -51,6 +51,7 @@ func main() {
 	// 课程结构导入
 	adminParty.Handle("POST", "/importCourseStructure", admin.ImportCourseStructure)
 
+	// 下面是瞎写的
 	app.Get("/getId", func(context context.Context) {
 		path := context.Path()
 		app.Logger().Info("request path is:", path)
@@ -144,6 +145,7 @@ func main() {
 
 	app.Run(
 		iris.Addr("localhost:8080"),
+		iris.WithOptimizations,
 		iris.WithCharset("UTF-8"),
 		iris.WithConfiguration(iris.Configuration{
 			IgnoreServerErrors:                nil,
