@@ -43,6 +43,17 @@
         userId: int
    ```
 
+   * 登出(从session里面删除学生的在线信息)
+   ```
+   method: POST
+   url: /logout
+   request header: // add TOKEN
+   response: //
+        code: int
+        msg: string
+        result: interface{}
+   ```
+
    * 学生密码修改(暂时不做)
    ```
     method: POST
@@ -50,7 +61,6 @@
     request body: 
         oldPasswd: string
         newPasswd: string
-        confirmNewPasswd: string
     response body:
     type resInfo struct:
         code: int
@@ -63,7 +73,7 @@
    method: GET
    url: /optionalCourse
    request body: //请求体
-    userId: int // 直接传token, 后台根据token去查找userId, 貌似也可以呀 :)
+    userId: int // 直接传token, 后台根据token去查找userId
    response body: // 响应体
     courseList: []Course
     type Course struct {

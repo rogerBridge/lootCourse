@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f9351182-f279-4fa7-99da-ec32bf0bbece" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Iris/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Iris/main.go" afterDir="false" />
+    </list>
+    <list id="3116cf4d-2b8d-458f-857b-2d60324eb4b2" name="iris 框架探索" comment="">
+      <change beforePath="$PROJECT_DIR$/Iris/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Iris/main.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="$USER_HOME$/.SDK/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/Iris/main.go">
+      <ranges>
+        <range start1="19" end1="20" start2="19" end2="20" changelist="3116cf4d-2b8d-458f-857b-2d60324eb4b2" />
+        <range start1="53" end1="53" start2="53" end2="54" changelist="f9351182-f279-4fa7-99da-ec32bf0bbece" />
+        <range start1="146" end1="146" start2="147" end2="148" changelist="f9351182-f279-4fa7-99da-ec32bf0bbece" />
+      </ranges>
+    </file>
+  </component>
+  <component name="ProjectId" id="1aA0b3A4naY60qmZGZNxKPrmxdm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../aliCCP" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models/students" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build leetcode">
+    <configuration name="go build go_basic" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="example" />
+      <working_directory value="$PROJECT_DIR$/../../go_basic" />
+      <kind value="DIRECTORY" />
+      <filePath value="$PROJECT_DIR$/../../go_basic/main.go" />
+      <package value="example" />
+      <directory value="$PROJECT_DIR$/../../go_basic" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build leetcode" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="example" />
+      <working_directory value="$PROJECT_DIR$/../../leetcode" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/../../leetcode/main.go" />
+      <package value="leetcode" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="example" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/Iris/main.go" />
+      <package value="example" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build publishMQTT.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="example" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/publishMQTT.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build receiveMQTT1.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="example" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/receiveMQTT1.go" />
+      <package value="example" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Build.go build go_basic" />
+      <item itemvalue="Go Build.go build publishMQTT.go" />
+      <item itemvalue="Go Build.go build receiveMQTT1.go" />
+      <item itemvalue="Go Build.go build leetcode" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build leetcode" />
+        <item itemvalue="Go Build.go build go_basic" />
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build publishMQTT.go" />
+        <item itemvalue="Go Build.go build receiveMQTT1.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",EXPORTABILITY_SORTER" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f9351182-f279-4fa7-99da-ec32bf0bbece" name="Default Changelist" comment="" />
+      <changelist id="3116cf4d-2b8d-458f-857b-2d60324eb4b2" name="iris 框架探索" comment="" />
+      <created>1586163158254</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586163158254</updated>
+    </task>
+    <task id="LOCAL-00001" summary="imooc example rabbitMQ简单模式">
+      <created>1586170761275</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586170761275</updated>
+    </task>
+    <task id="LOCAL-00002" summary="iris 框架探索&#10;&#10;现在自己一头雾水, 唉, 先把iris框架好好过一遍吧~~">
+      <created>1586257601706</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586257601706</updated>
+    </task>
+    <task id="LOCAL-00003" summary="iris 框架探索&#10;&#10;基本的IRIS框架已经了解, 自己所需的那6个接口已经填写上去了">
+      <created>1586270471805</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586270471805</updated>
+    </task>
+    <task id="LOCAL-00004" summary="iris 框架探索&#10;&#10;基本的IRIS框架已经了解, 自己所需的那6个接口已经填写上去了">
+      <created>1586351545283</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586351545283</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="imooc example rabbitMQ简单模式" />
+    <MESSAGE value="iris 框架探索&#10;&#10;现在自己一头雾水, 唉, 先把iris框架好好过一遍吧~~" />
+    <MESSAGE value="iris 框架探索&#10;&#10;基本的IRIS框架已经了解, 自己所需的那6个接口已经填写上去了" />
+    <option name="LAST_COMMIT_MESSAGE" value="iris 框架探索&#10;&#10;基本的IRIS框架已经了解, 自己所需的那6个接口已经填写上去了" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="526" y="201" width="800" height="684" key="#Go_Modules_(vgo)" timestamp="1586165281729">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state x="526" y="201" width="800" height="684" key="#Go_Modules_(vgo)/0.0.1862.1080@0.0.1862.1080" timestamp="1586165281729" />
+    <state x="389" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586355500125">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state x="389" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1862.1080@0.0.1862.1080" timestamp="1586355500125" />
+    <state x="605" y="166" width="642" height="754" key="#go_build_example" timestamp="1586175490868">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state x="605" y="166" width="642" height="754" key="#go_build_example/0.0.1862.1080@0.0.1862.1080" timestamp="1586175490868" />
+    <state x="605" y="166" width="642" height="754" key="#go_build_example_(1)" timestamp="1586178637907">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state x="605" y="166" width="642" height="754" key="#go_build_example_(1)/0.0.1862.1080@0.0.1862.1080" timestamp="1586178637907" />
+    <state x="616" y="176" width="619" height="735" key="#go_build_publishMQTT.go" timestamp="1586163171065">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state x="616" y="176" width="619" height="735" key="#go_build_publishMQTT.go/0.0.1862.1080@0.0.1862.1080" timestamp="1586163171065" />
+    <state x="496" y="114" width="860" height="859" key="CommitChangelistDialog2" timestamp="1586351545006">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state x="496" y="114" width="860" height="859" key="CommitChangelistDialog2/0.0.1862.1080@0.0.1862.1080" timestamp="1586351545006" />
+    <state x="714" y="298" width="424" height="491" key="FileChooserDialogImpl" timestamp="1586426479368">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state x="714" y="298" width="424" height="491" key="FileChooserDialogImpl/0.0.1862.1080@0.0.1862.1080" timestamp="1586426479367" />
+    <state width="1816" height="339" key="GridCell.Tab.0.bottom" timestamp="1586426591871">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state width="1816" height="339" key="GridCell.Tab.0.bottom/0.0.1862.1080@0.0.1862.1080" timestamp="1586426591871" />
+    <state width="1816" height="339" key="GridCell.Tab.0.center" timestamp="1586426591869">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state width="1816" height="339" key="GridCell.Tab.0.center/0.0.1862.1080@0.0.1862.1080" timestamp="1586426591869" />
+    <state width="1816" height="339" key="GridCell.Tab.0.left" timestamp="1586426591868">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state width="1816" height="339" key="GridCell.Tab.0.left/0.0.1862.1080@0.0.1862.1080" timestamp="1586426591868" />
+    <state width="1816" height="339" key="GridCell.Tab.0.right" timestamp="1586426591870">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state width="1816" height="339" key="GridCell.Tab.0.right/0.0.1862.1080@0.0.1862.1080" timestamp="1586426591870" />
+    <state x="265" y="93" width="1222" height="886" key="SettingsEditor" timestamp="1586244768081">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state x="265" y="93" width="1222" height="886" key="SettingsEditor/0.0.1862.1080@0.0.1862.1080" timestamp="1586244768081" />
+    <state x="774" y="457" width="303" height="172" key="VCS.ChangelistChooser" timestamp="1586351574361">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state x="774" y="457" width="303" height="172" key="VCS.ChangelistChooser/0.0.1862.1080@0.0.1862.1080" timestamp="1586351574361" />
+    <state x="526" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1586270474113">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state x="526" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2/0.0.1862.1080@0.0.1862.1080" timestamp="1586270474113" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1586343237057">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state width="1016" height="500" key="javadoc.popup.new" timestamp="1586426444803">
+      <screen x="0" y="0" width="1862" height="1080" />
+    </state>
+    <state width="1016" height="500" key="javadoc.popup.new/0.0.1862.1080@0.0.1862.1080" timestamp="1586426444803" />
+    <state width="600" height="424" key="javadoc.popup/0.0.1862.1080@0.0.1862.1080" timestamp="1586343237057" />
+  </component>
+</project>

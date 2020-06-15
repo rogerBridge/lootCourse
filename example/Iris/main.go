@@ -3,8 +3,8 @@ package main
 import (
 	"example/selfModels/admin"
 	"example/selfModels/students"
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/context"
+	"github.com/kataras/iris/v12"
+	"github.com/kataras/iris/v12/context"
 )
 
 var app = iris.New()
@@ -15,9 +15,10 @@ func main() {
 	//// 注册模板
 	//app.RegisterView(iris.HTML("./web/views", ".html"))
 	//// 注册控制器
+	//app.Logger().SetLevel("debug")
 
 	// 首先, 学生模块
-	studentsParty := app.APIBuilder.Party("/students", func(c context.Context) {
+	studentsParty := app.Party("/students", func(c context.Context) {
 		c.Next()
 	})
 	studentsParty.Done(func(c context.Context) {
@@ -51,7 +52,7 @@ func main() {
 	// 课程结构导入
 	adminParty.Handle("POST", "/importCourseStructure", admin.ImportCourseStructure)
 
-	// 下面是瞎写的
+	//
 	app.Get("/getId", func(context context.Context) {
 		path := context.Path()
 		app.Logger().Info("request path is:", path)
@@ -147,27 +148,6 @@ func main() {
 		iris.Addr("localhost:8080"),
 		iris.WithOptimizations,
 		iris.WithCharset("UTF-8"),
-		iris.WithConfiguration(iris.Configuration{
-			IgnoreServerErrors:                nil,
-			DisableStartupLog:                 false,
-			DisableInterruptHandler:           false,
-			DisablePathCorrection:             false,
-			DisablePathCorrectionRedirection:  false,
-			EnablePathEscape:                  false,
-			EnableOptimizations:               false,
-			FireMethodNotAllowed:              false,
-			DisableBodyConsumptionOnUnmarshal: false,
-			DisableAutoFireStatusCode:         false,
-			TimeFormat:                        "",
-			Charset:                           "",
-			PostMaxMemory:                     0,
-			TranslateFunctionContextKey:       "",
-			TranslateLanguageContextKey:       "",
-			ViewLayoutContextKey:              "",
-			ViewDataContextKey:                "",
-			RemoteAddrHeaders:                 nil,
-			Other:                             nil,
-		}),
 	)
 }
 
